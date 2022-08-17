@@ -26,17 +26,14 @@ class _MainPageState extends State<MainPage> {
   }
 
   Widget buildElevatedButton(String buttonText, Widget pageToGoTo) {
-    return SizedBox(
-      width: 100,
-      child: ElevatedButton(
-        onPressed: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => pageToGoTo),
-          );
-        },
-        child: Text(buttonText),
-      ),
+    return ElevatedButton(
+      onPressed: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => pageToGoTo),
+        );
+      },
+      child: Text(buttonText),
     );
   }
 }
