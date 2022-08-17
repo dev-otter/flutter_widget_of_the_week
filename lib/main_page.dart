@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widget_of_the_week/safearea/expanded_page.dart';
 import 'package:flutter_widget_of_the_week/safearea/safe_area_page.dart';
 
 import 'my_app_bar.dart';
@@ -18,6 +19,7 @@ class _MainPageState extends State<MainPage> {
       body: ListView(
         children: [
           buildElevatedButton(SafeAreaPage.pageName, const SafeAreaPage()),
+          buildElevatedButton(ExpandedPage.pageName, const ExpandedPage()),
         ],
       ),
     );
