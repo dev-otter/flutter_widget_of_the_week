@@ -7,14 +7,14 @@ class SafeAreaPage extends StatefulWidget {
   const SafeAreaPage({Key? key}) : super(key: key);
 
   @override
-  _SafeAreaPageState createState() => _SafeAreaPageState();
+  State<SafeAreaPage> createState() => _SafeAreaPageState();
 }
 
 class _SafeAreaPageState extends State<SafeAreaPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: MyAppBar(text: SafeAreaPage.pageName),
+      appBar: MyAppBar(titleText: SafeAreaPage.pageName),
       body: SafeArea(
         child: _buildListView(),
       ),

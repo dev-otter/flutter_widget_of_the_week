@@ -15,7 +15,7 @@ class _ExpandedPageState extends State<ExpandedPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: MyAppBar(
-        text: ExpandedPage.pageName,
+        titleText: ExpandedPage.pageName,
       ),
       body: _buildListView(),
     );
@@ -34,6 +34,7 @@ class _ExpandedPageState extends State<ExpandedPage> {
               ),
             ),
             Expanded(
+              flex: 0, // if the flex is 0 or null, it will be inflexible.
               child: Container(
                 height: 100,
                 color: Colors.deepPurple,

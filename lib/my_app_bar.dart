@@ -3,12 +3,12 @@ import 'package:flutter/material.dart';
 class MyAppBar extends AppBar {
   MyAppBar({
     Key? key,
-    required String text,
+    required String titleText,
   }) : super(
           key: key,
           title: Text(
-            text,
-            style: const TextStyle(fontSize: 16),
+            titleText,
+            style: const TextStyle(fontSize: 20),
           ),
         );
 }
